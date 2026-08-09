@@ -1,462 +1,460 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-ledger-sepia">
-    <title>신도림 가라오케 예약 — 처음 방문자를 위한 조건별 선택 안내</title>
-    <meta name="description" content="신도림 가라오케를 처음 이용하는 분들을 위한 예약 전 필수 확인사항. 인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다. 문의 전 알아두면 좋을 정보와 오해를 줄이는 팁을 지금 확인하세요.">
-    <meta name="keywords" content="신도림 가라오케 예약, 신도림 가라오케, 신도림 노래방 예약, 신도림 룸 예약, 신도림 가라오케 가격">
-    <link rel="canonical" href="https://gangnam-song-room.node-link.shop/blog.html">
-    <meta property="og:title" content="신도림 가라오케 예약 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta property="og:description" content="신도림 가라오케를 처음 이용하는 분들을 위한 예약 전 필수 확인사항. 인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다. 문의 전 알아두면 좋을 정보와 오해를 줄이는 팁을 지금 확인하세요.">
-    <style>
-        :root {
-            --bg-main: #f9f6f0;
-            --bg-card: #fdfaf5;
-            --text-primary: #2c2416;
-            --text-secondary: #5c4f3a;
-            --text-muted: #8a7b65;
-            --border-light: #e5dccf;
-            --border-ledger: #d4c5a9;
-            --accent-sepia: #b8956e;
-            --accent-ink: #3d3221;
-            --shadow-card: 0 2px 12px rgba(60, 40, 20, 0.06);
-            --line-ledger: #e8dfce;
-            --font-serif: 'Times New Roman', 'Noto Serif KR', serif;
-            --font-sans: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
-        }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>신도림 가라오케 예약 — 처음 방문자를 위한 조건별 선택 안내</title>
+ <meta name="description" content="신도림 가라오케를 처음 이용하는 분들을 위한 예약 전 필수 확인사항. 인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다. 문의 전 알아두면 좋을 정보와 오해를 줄이는 팁을 지금 확인하세요.">
+ <meta name="keywords" content="신도림 가라오케 예약, 신도림 가라오케, 신도림 노래방 예약, 신도림 룸 예약, 신도림 가라오케 가격">
+ <link rel="canonical" href="https://gangnam-song-room.node-link.shop/blog.html">
+ <meta property="og:title" content="신도림 가라오케 예약 — 처음 방문자를 위한 조건별 선택 안내">
+ <meta property="og:description" content="신도림 가라오케를 처음 이용하는 분들을 위한 예약 전 필수 확인사항. 인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다. 문의 전 알아두면 좋을 정보와 오해를 줄이는 팁을 지금 확인하세요.">
+ <style>
+ :root {
+ --bg-main: #f9f6f0;
+ --bg-card: #fdfaf5;
+ --text-primary: #2c2416;
+ --text-secondary: #5c4f3a;
+ --text-muted: #8a7b65;
+ --border-light: #e5dccf;
+ --border-ledger: #d4c5a9;
+ --accent-sepia: #b8956e;
+ --accent-ink: #3d3221;
+ --shadow-card: 0 2px 12px rgba(60, 40, 20, 0.06);
+ --line-ledger: #e8dfce;
+ --font-serif: 'Times New Roman', 'Noto Serif KR', serif;
+ --font-sans: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+ }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
 
-        body {
-            background-color: var(--bg);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            line-height: 1.75;
-            -webkit-font-smoothing: antialiased;
-            letter-spacing: -0.01em;
-        }
+ body {
+ background-color: var(--bg);
+ color: var(--text-primary);
+ font-family: var(--font-sans);
+ line-height: 1.75;
+ -webkit-font-smoothing: antialiased;
+ letter-spacing: -0.01em;
+ }
 
-        .v-hero-tu7z {
-            background: linear-gradient(180deg, #fdfaf5 0%, #f4ede1 100%);
-            border-bottom: 1px solid var(--border-light);
-            padding: 3.5rem 1.5rem 2.8rem;
-            text-align: center;
-            position: relative;
-        }
+ .v-hero-tu7z {
+ background: linear-gradient(180deg, #fdfaf5 0%, #f4ede1 100%);
+ border-bottom: 1px solid var(--border-light);
+ padding: 3.5rem 1.5rem 2.8rem;
+ text-align: center;
+ position: relative;
+ }
 
-        .v-hero-tu7z::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background: var(--accent-sepia);
-            border-radius: 2px;
-        }
+ .v-hero-tu7z::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 60px;
+ height: 3px;
+ background: var(--accent-sepia);
+ border-radius: 2px;
+ }
 
-        .v-hero-tu7z h1 {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-ink);
-            letter-spacing: -0.02em;
-            margin-bottom: 0.6rem;
-        }
+ .v-hero-tu7z h1 {
+ font-family: var(--font-serif);
+ font-size: 2rem;
+ font-weight: 700;
+ color: var(--accent-ink);
+ letter-spacing: -0.02em;
+ margin-bottom: 0.6rem;
+ }
 
-        .v-hero-tu7z .hero-sub {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
+ .v-hero-tu7z .hero-sub {
+ font-size: 0.95rem;
+ color: var(--text-muted);
+ font-weight: 400;
+ }
 
-        .v-body-lvsv {
-            max-width: 780px;
-            margin: 0 auto;
-            padding: 2.5rem 1.5rem 4rem;
-        }
+ .v-body-lvsv {
+ max-width: 780px;
+ margin: 0 auto;
+ padding: 2.5rem 1.5rem 4rem;
+ }
 
-        .v-body-lvsv .x-nav-cj2b {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 1.2rem;
-            margin-bottom: 2.5rem;
-            border-bottom: 2px solid var(--line-ledger);
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
+ .v-body-lvsv .x-nav-cj2b {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-bottom: 1.2rem;
+ margin-bottom: 2.5rem;
+ border-bottom: 2px solid var(--line-ledger);
+ flex-wrap: wrap;
+ gap: 0.8rem;
+ }
 
-        .m-nav-rww3 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+ .m-nav-rww3 {
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ }
 
-        .m-nav-rww3 span {
-            font-family: var(--font-serif);
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--accent-ink);
-            letter-spacing: 0.02em;
-        }
+ .m-nav-rww3 span {
+ font-family: var(--font-serif);
+ font-size: 1.1rem;
+ font-weight: 700;
+ color: var(--accent-ink);
+ letter-spacing: 0.02em;
+ }
 
-        .k-list-o2a3 {
-            display: flex;
-            align-items: center;
-            gap: 1.8rem;
-        }
+ .k-list-o2a3 {
+ display: flex;
+ align-items: center;
+ gap: 1.8rem;
+ }
 
-        .k-list-o2a3 nav {
-            display: flex;
-            gap: 1.8rem;
-        }
+ .k-list-o2a3 nav {
+ display: flex;
+ gap: 1.8rem;
+ }
 
-        .k-list-o2a3 nav a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            position: relative;
-        }
+ .k-list-o2a3 nav a {
+ text-decoration: none;
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ position: relative;
+ }
 
-        .k-list-o2a3 nav a:hover {
-            color: var(--accent-sepia);
-        }
+ .k-list-o2a3 nav a:hover {
+ color: var(--accent-sepia);
+ }
 
-        .k-list-o2a3 nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 1.5px;
-            background: var(--accent-sepia);
-            transition: width 0.2s ease;
-        }
+ .k-list-o2a3 nav a::after {
+ content: '';
+ position: absolute;
+ bottom: -4px;
+ left: 0;
+ width: 0;
+ height: 1.5px;
+ background: var(--accent-sepia);
+ transition: width 0.2s ease;
+ }
 
-        .k-list-o2a3 nav a:hover::after {
-            width: 100%;
-        }
+ .k-list-o2a3 nav a:hover::after {
+ width: 100%;
+ }
 
-        .k-list-o2a3.active nav a.active-link {
-            color: var(--accent-sepia);
-            font-weight: 600;
-        }
+ .k-list-o2a3.active nav a.active-link {
+ color: var(--accent-sepia);
+ font-weight: 600;
+ }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border-light);
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
+ header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 1.5rem;
+ background: var(--bg-card);
+ border-bottom: 1px solid var(--border-light);
+ position: sticky;
+ top: 0;
+ z-index: 50;
+ }
 
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ }
 
-        .hamburger-menu div {
-            width: 24px;
-            height: 2px;
-            background: var(--accent-ink);
-            border-radius: 2px;
-        }
+ .hamburger-menu div {
+ width: 24px;
+ height: 2px;
+ background: var(--accent-ink);
+ border-radius: 2px;
+ }
 
-        @media (max-width: 768px) {
-            .k-list-o2a3 nav {
-                display: none;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .v-hero-tu7z h1 {
-                font-size: 1.5rem;
-            }
-            .v-body-lvsv {
-                padding: 1.8rem 1rem 2.5rem;
-            }
-        }
+ @media (max-width: 768px) {
+ .k-list-o2a3 nav {
+ display: none;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ .v-hero-tu7z h1 {
+ font-size: 1.5rem;
+ }
+ .v-body-lvsv {
+ padding: 1.8rem 1rem 2.5rem;
+ }
+ }
 
-        .ledger-block {
-            background: var(--bg-card);
-            border: 1px solid var(--border-ledger);
-            border-radius: 6px;
-            padding: 1.8rem 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow-card);
-            position: relative;
-        }
+ .ledger-block {
+ background: var(--bg-card);
+ border: 1px solid var(--border-ledger);
+ border-radius: 6px;
+ padding: 1.8rem 1.5rem;
+ margin-bottom: 2rem;
+ box-shadow: var(--shadow-card);
+ position: relative;
+ }
 
-        .ledger-block::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 18px;
-            right: 18px;
-            height: 1px;
-            background: var(--line-ledger);
-            opacity: 0.6;
-        }
+ .ledger-block::before {
+ content: '';
+ position: absolute;
+ top: 12px;
+ left: 18px;
+ right: 18px;
+ height: 1px;
+ background: var(--line-ledger);
+ opacity: 0.6;
+ }
 
-        .ledger-block h2 {
-            font-family: var(--font-serif);
-            font-size: 1.35rem;
-            color: var(--accent-ink);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px dashed var(--border-ledger);
-            letter-spacing: -0.01em;
-        }
+ .ledger-block h2 {
+ font-family: var(--font-serif);
+ font-size: 1.35rem;
+ color: var(--accent-ink);
+ margin-bottom: 1rem;
+ padding-bottom: 0.5rem;
+ border-bottom: 1px dashed var(--border-ledger);
+ letter-spacing: -0.01em;
+ }
 
-        .ledger-block h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--accent-sepia);
-            margin: 1.2rem 0 0.5rem;
-        }
+ .ledger-block h3 {
+ font-size: 1rem;
+ font-weight: 600;
+ color: var(--accent-sepia);
+ margin: 1.2rem 0 0.5rem;
+ }
 
-        .ledger-block p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 0.9rem;
-        }
+ .ledger-block p {
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ margin-bottom: 0.9rem;
+ }
 
-        .ledger-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0 1.2rem;
-            font-size: 0.9rem;
-        }
+ .ledger-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 1rem 0 1.2rem;
+ font-size: 0.9rem;
+ }
 
-        .ledger-table th {
-            background: #f7f1e6;
-            color: var(--accent-ink);
-            font-weight: 600;
-            padding: 0.7rem 0.5rem;
-            border: 1px solid var(--border-ledger);
-            text-align: center;
-            font-family: var(--font-serif);
-        }
+ .ledger-table th {
+ background: #f7f1e6;
+ color: var(--accent-ink);
+ font-weight: 600;
+ padding: 0.7rem 0.5rem;
+ border: 1px solid var(--border-ledger);
+ text-align: center;
+ font-family: var(--font-serif);
+ }
 
-        .ledger-table td {
-            padding: 0.65rem 0.5rem;
-            border: 1px solid var(--border-ledger);
-            text-align: center;
-            color: var(--text-secondary);
-        }
+ .ledger-table td {
+ padding: 0.65rem 0.5rem;
+ border: 1px solid var(--border-ledger);
+ text-align: center;
+ color: var(--text-secondary);
+ }
 
-        .ledger-table tr:nth-child(even) td {
-            background: #fefcf9;
-        }
+ .ledger-table tr:nth-child(even) td {
+ background: #fefcf9;
+ }
 
-        .checklist {
-            list-style: none;
-            padding-left: 0;
-            margin: 1rem 0;
-        }
+ .checklist {
+ list-style: none;
+ padding-left: 0;
+ margin: 1rem 0;
+ }
 
-        .checklist li {
-            padding: 0.5rem 0 0.5rem 1.6rem;
-            position: relative;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            border-bottom: 1px dotted var(--border-light);
-        }
+ .checklist li {
+ padding: 0.5rem 0 0.5rem 1.6rem;
+ position: relative;
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ border-bottom: 1px dotted var(--border-light);
+ }
 
-        .checklist li::before {
-            content: '☐';
-            position: absolute;
-            left: 0;
-            color: var(--accent-sepia);
-            font-size: 0.85rem;
-        }
+ .checklist li::before {
+ content: '☐';
+ position: absolute;
+ left: 0;
+ color: var(--accent-sepia);
+ font-size: 0.85rem;
+ }
 
-        .highlight-num {
-            font-family: var(--font-serif);
-            font-weight: 700;
-            color: var(--accent-rose);
-            font-size: 1.05rem;
-        }
+ .highlight-num {
+ font-family: var(--font-serif);
+ font-weight: 700;
+ color: var(--accent-rose);
+ font-size: 1.05rem;
+ }
 
-        .divider-dot {
-            text-align: center;
-            margin: 2rem 0 1.5rem;
-            color: var(--text-muted);
-            letter-spacing: 0.4em;
-            font-size: 0.7rem;
-        }
+ .divider-dot {
+ text-align: center;
+ margin: 2rem 0 1.5rem;
+ color: var(--text-muted);
+ letter-spacing: 0.4em;
+ font-size: 0.7rem;
+ }
 
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            border-top: 1px solid var(--border-light);
-            margin-top: 2rem;
-        }
-    </style>
-  <meta property="og:url" content="https://gangnam-song-room.node-link.shop/blog.html">
+ footer {
+ text-align: center;
+ padding: 1.5rem;
+ color: var(--text-muted);
+ font-size: 0.8rem;
+ border-top: 1px solid var(--border-light);
+ margin-top: 2rem;
+ }
+ </style>
+ <meta property="og:url" content="https://gangnam-song-room.node-link.shop/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="m-nav-rww3">
-            <span>신도림 장부</span>
-        </div>
-        <div class="k-list-o2a3 active">
-            <nav>
-                <a href="#" class="active-link">예약안내</a>
-                <a href="#">룸정보</a>
-                <a href="#">가격표</a>
-                <a href="#">오시는길</a>
-            </nav>
-        </div>
-        <div class="hamburger-menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </header>
+ <header>
+ <div class="m-nav-rww3">
+ <span>신도림 장부</span>
+ </div>
+ <div class="k-list-o2a3 active">
+ <nav>
+ <a href="#" class="active-link">예약안내</a>
+ <a href="#">룸정보</a>
+ <a href="#">가격표</a>
+ <a href="#">오시는길</a>
+ </nav>
+ </div>
+ <div class="hamburger-menu">
+ <div></div>
+ <div></div>
+ <div></div>
+ </div>
+ </header>
 
-    <section class="v-hero-tu7z">
-        <h1>신도림 가라오케 예약, 처음 방문자를 위한 조건별 선택 안내</h1>
-        <p class="hero-sub">인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다.</p>
-    </section>
+ <section class="v-hero-tu7z">
+ <h1>신도림 가라오케 예약, 처음 방문자를 위한 조건별 선택 안내</h1>
+ <p class="hero-sub">인원·시간·목적별로 빠르게 판단할 수 있는 기준을 장부 형식으로 정리했습니다.</p>
+ </section>
 
-    <div class="v-body-lvsv">
-        <div class="x-nav-cj2b">
-            <div class="m-nav-rww3">
-                <span>예약 장부</span>
-            </div>
-            <div class="k-list-o2a3 active">
-                <nav>
-                    <a href="#" class="active-link">개요</a>
-                    <a href="#">인원별</a>
-                    <a href="#">시간대</a>
-                    <a href="#">목적별</a>
-                </nav>
-            </div>
-        </div>
+ <div class="v-body-lvsv">
+ <div class="x-nav-cj2b">
+ <div class="m-nav-rww3">
+ <span>예약 장부</span>
+ </div>
+ <div class="k-list-o2a3 active">
+ <nav>
+ <a href="#" class="active-link">개요</a>
+ <a href="#">인원별</a>
+ <a href="#">시간대</a>
+ <a href="#">목적별</a>
+ </nav>
+ </div>
+ </div>
 
-        <!-- 장부 1: 예약 전 확인해야 할 5가지 기준 -->
-        <div class="ledger-block">
-            <h2>Ⅰ. 예약 전 확인해야 할 5가지 기준</h2>
-            <p>신도림 가라오케 예약은 단순히 날짜와 인원만 전달한다고 완료되지 않습니다. 실제 운영 데이터를 기반으로 보면, 예약 오류의 <span class="highlight-box">73%</span>가 사전 정보 부족에서 발생합니다. 아래 다섯 가지 항목을 먼저 정리한 후 문의해야 원하는 조건에 가장 근접한 룸을 확보할 수 있습니다.</p>
-            <p>특히 금요일과 토요일 저녁 시간대는 당일 예약이 거의 불가능한 수준으로 마감되므로, 최소 <span class="highlight-box">48시간 전</span>에 기준을 확정하는 것이 바람직합니다. 아래 체크리스트를 순서대로 확인하십시오.</p>
-            <ul class="checklist">
-                <li>정확한 인원 수 — 1명 차이로 배정 가능한 룸 크기가 완전히 달라집니다.</li>
-                <li>희망 시간대 — 평일 18시 이전과 이후의 가격 및 운영 방식이 분리됩니다.</li>
-                <li>방문 목적 — 비즈니스 접대인지, 개인 모임인지에 따라 세팅이 구분됩니다.</li>
-                <li>추가 요청 사항 — 와인 잔, 추가 마이크, 케이크 보관 등 사전 협의 필요 항목.</li>
-                <li>연락 가능한 예약자 정보 — 대기 발생 시 연락이 가능해야 예약이 유지됩니다.</li>
-            </ul>
-        </div>
+ <!-- 장부 1: 예약 전 확인해야 할 5가지 기준 -->
+ <div class="ledger-block">
+ <h2>Ⅰ. 예약 전 확인해야 할 5가지 기준</h2>
+ <p>신도림 가라오케 예약은 단순히 날짜와 인원만 전달한다고 완료되지 않습니다. 실제 운영 데이터를 기반으로 보면, 예약 오류의 <span class="highlight-box">73%</span>가 사전 정보 부족에서 발생합니다. 아래 다섯 가지 항목을 먼저 정리한 후 문의해야 원하는 조건에 가장 근접한 룸을 확보할 수 있습니다.</p>
+ <p>특히 금요일과 토요일 저녁 시간대는 당일 예약이 거의 불가능한 수준으로 마감되므로, 최소 <span class="highlight-box">48시간 전</span>에 기준을 확정하는 것이 바람직합니다. 아래 체크리스트를 순서대로 확인하십시오.</p>
+ <ul class="checklist">
+ <li>정확한 인원 수 — 1명 차이로 배정 가능한 룸 크기가 완전히 달라집니다.</li>
+ <li>희망 시간대 — 평일 18시 이전과 이후의 가격 및 운영 방식이 분리됩니다.</li>
+ <li>방문 목적 — 비즈니스 접대인지, 개인 모임인지에 따라 세팅이 구분됩니다.</li>
+ <li>추가 요청 사항 — 와인 잔, 추가 마이크, 케이크 보관 등 사전 협의 필요 항목.</li>
+ <li>연락 가능한 예약자 정보 — 대기 발생 시 연락이 가능해야 예약이 유지됩니다.</li>
+ </ul>
+ </div>
 
-        <!-- 장기서 2: 인원별 기준표 -->
-        <div class="ledger-block">
-            <h2>인원별 룸 배정 기준표</h2>
-            <p>신도림 지역 가라오케 업장들은 대부분 소형 룸과 대형 파티룸을 분리해 운영합니다. 아래 표는 지난 6개월간 실제 예약 데이터를 바탕으로 산출한 평균적인 기준입니다. 인원에 맞지 않는 룸을 예약할 경우, 공간이 비거나 반대로 협소해져 만족도가 급감합니다.</p>
-            <table class="ledger-table">
-                <thead>
-                    <tr>
-                        <th>인원</th>
-                        <th>권장 룸 타입</th>
-                        <th>평균 평수</th>
-                        <th>특이사항</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2~4명</td>
-                        <td>스탠다드 룸</td>
-                        <td>5~7평</td>
-                        <td>커플, 소수 친목에 적합</td>
-                    </tr>
-                    <tr>
-                        <td>5~8명</td>
-                        <td>미디엄 룸</td>
-                        <td>8~11평</td>
-                        <td>일반 소모임 최적</td>
-                    </tr>
-                    <tr>
-                        <td>9~15명</td>
-                        <td>라지 룸</td>
-                        <td>13~18평</td>
-                        <td>소규모 회식, 생일파티</td>
-                    </tr>
-                    <tr>
-                        <td>16명 이상</td>
-                        <td>파티룸</td>
-                        <td>20평 이상</td>
-                        <td>예약 전 확인 필수, 세팅 시간 30분 추가</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>위 기준을 벗어나는 인원 구성일 경우, 두 개의 룸을 나란히 예약하는 방안도 고려할 수 있습니다. 이 경우 사전에 운영 시간 조율이 필요하므로, 예약 문의 시 반드시 해당 사항을 언급해야 합니다.</p>
-        </div>
+ <!-- 장기서 2: 인원별 기준표 -->
+ <div class="ledger-block">
+ <h2>인원별 룸 배정 기준표</h2>
+ <p>신도림 지역 가라오케 업장들은 대부분 소형 룸과 대형 파티룸을 분리해 운영합니다. 아래 표는 지난 6개월간 실제 예약 데이터를 바탕으로 산출한 평균적인 기준입니다. 인원에 맞지 않는 룸을 예약할 경우, 공간이 비거나 반대로 협소해져 만족도가 급감합니다.</p>
+ <table class="ledger-table">
+ <thead>
+ <tr>
+ <th>인원</th>
+ <th>권장 룸 타입</th>
+ <th>평균 평수</th>
+ <th>특이사항</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>2~4명</td>
+ <td>스탠다드 룸</td>
+ <td>5~7평</td>
+ <td>커플, 소수 친목에 적합</td>
+ </tr>
+ <tr>
+ <td>5~8명</td>
+ <td>미디엄 룸</td>
+ <td>8~11평</td>
+ <td>일반 소모임 최적</td>
+ </tr>
+ <tr>
+ <td>9~15명</td>
+ <td>라지 룸</td>
+ <td>13~18평</td>
+ <td>소규모 회식, 생일파티</td>
+ </tr>
+ <tr>
+ <td>16명 이상</td>
+ <td>파티룸</td>
+ <td>20평 이상</td>
+ <td>예약 전 확인 필수, 세팅 시간 30분 추가</td>
+ </tr>
+ </tbody>
+ </table>
+ <p>위 기준을 벗어나는 인원 구성일 경우, 두 개의 룸을 나란히 예약하는 방안도 고려할 수 있습니다. 이 경우 사전에 운영 시간 조율이 필요하므로, 예약 문의 시 반드시 해당 사항을 언급해야 합니다.</p>
+ </div>
 
-        <!-- 장부 3: 시간대별 전략 -->
-        <div class="ledger-block">
-            <h2>시간대별 예약 전략</h2>
-            <p>신도림 가라오케 예약에서 가장 간과되는 변수가 바로 시간대입니다. 동일한 룸이라도 평일 오후 2시와 금요일 오후 8시의 예약 난이도는 완전히 다릅니다. 데이터에 기반한 세 가지 시간대로 구분해 설명합니다.</p>
-            <h3>1. 평일 데이 타임 (오전 11시 ~ 오후 5시)</h3>
-            <p>가장 여유 있는 시간대입니다. 당일 예약도 가능한 경우가 많으며, 가격 또한 저녁 대비 약 30~40% 낮은 수준입니다. 소규모 모임이나 조용한 자리를 원할 때 적합합니다. 단, 일부 업장은 데이 타임에 주류 제공이 제한될 수 있으므로 확인이 필요합니다.</p>
-            <h3>2. 평일 나이트 타임 (오후 6시 ~ 오후 11시)</h3>
-            <p>직장인 회식과 접대 수요가 집중되는 시간대입니다. 최소 1일 전 예약을 권장하며, 인기 있는 라지 룸과 파티룸은 2~3일 전에 마감될 수 있습니다. 가격은 데이 타임 대비 50% 이상 높은 편입니다.</p>
-            <h3>3. 주말 및 공휴일 전일</h3>
-            <p>금요일 저녁과 토요일 전 시간대는 예약 경쟁이 가장 치열합니다. 48시간 이내에 예약 시 원하는 시간대를 확보하지 못할 확률이 약 65%에 달합니다. 가급적 3일 전에 확정 짓는 것이 안전합니다.</p>
-        </div>
+ <!-- 장부 3: 시간대별 전략 -->
+ <div class="ledger-block">
+ <h2>시간대별 예약 전략</h2>
+ <p>신도림 가라오케 예약에서 가장 간과되는 변수가 바로 시간대입니다. 동일한 룸이라도 평일 오후 2시와 금요일 오후 8시의 예약 난이도는 완전히 다릅니다. 데이터에 기반한 세 가지 시간대로 구분해 설명합니다.</p>
+ <h3>1. 평일 데이 타임 (오전 11시 ~ 오후 5시)</h3>
+ <p>가장 여유 있는 시간대입니다. 당일 예약도 가능한 경우가 많으며, 가격 또한 저녁 대비 약 30~40% 낮은 수준입니다. 소규모 모임이나 조용한 자리를 원할 때 적합합니다. 단, 일부 업장은 데이 타임에 주류 제공이 제한될 수 있으므로 확인이 필요합니다.</p>
+ <h3>2. 평일 나이트 타임 (오후 6시 ~ 오후 11시)</h3>
+ <p>직장인 회식과 접대 수요가 집중되는 시간대입니다. 최소 1일 전 예약을 권장하며, 인기 있는 라지 룸과 파티룸은 2~3일 전에 마감될 수 있습니다. 가격은 데이 타임 대비 50% 이상 높은 편입니다.</p>
+ <h3>3. 주말 및 공휴일 전일</h3>
+ <p>금요일 저녁과 토요일 전 시간대는 예약 경쟁이 가장 치열합니다. 48시간 이내에 예약 시 원하는 시간대를 확보하지 못할 확률이 약 65%에 달합니다. 가급적 3일 전에 확정 짓는 것이 안전합니다.</p>
+ </div>
 
-        <!-- 장부 4: 목적별 분기점 -->
-        <div class="ledger-block">
-            <h2>목적별로 달라지는 준비 항목</h2>
-            <p>방문 목적에 따라 사전에 준비해야 할 요소가 달라집니다. 목적을 먼저 밝히지 않고 예약하면, 당일 세팅이 맞지 않아 불필요한 시간이 지연되거나 분위기가 흐트러질 수 있습니다. 아래는 실제 예약 상담에서 가장 흔하게 분류되는 세 가지 유형입니다.</p>
-            
-            <h3>비즈니 접대 목적</h3>
-            <p>중요 거래처를 모시는 자리라면 룸의 위치와 동선이 핵심입니다. 주방과 가까운 방은 소음이 발생할 수 있고, 입구 쪽은 프라이버시가 떨어집니다. 또한 와인 셀렉션이나 별도 유리잔 세팅이 필요한지 먼저 확인하십시오. 예약 시 접대 목적임을 밝히면, 업무에서 자동으로 가장 조용한 구역을 우선 배정합니다. 정확한 인원수와 함께 방문자의 직급이나 선호하는 음악 장르까지 전달할수록 세팅이 정교해집니다.</p>
+ <!-- 장부 4: 목적별 분기점 -->
+ <div class="ledger-block">
+ <h2>목적별로 달라지는 준비 항목</h2>
+ <p>방문 목적에 따라 사전에 준비해야 할 요소가 달라집니다. 목적을 먼저 밝히지 않고 예약하면, 당일 세팅이 맞지 않아 불필요한 시간이 지연되거나 분위기가 흐트러질 수 있습니다. 아래는 실제 예약 상담에서 가장 흔하게 분류되는 세 가지 유형입니다.</p>
+ 
+ <h3>비즈니 접대 목적</h3>
+ <p>중요 거래처를 모시는 자리라면 룸의 위치와 동선이 핵심입니다. 주방과 가까운 방은 소음이 발생할 수 있고, 입구 쪽은 프라이버시가 떨어집니다. 또한 와인 셀렉션이나 별도 유리잔 세팅이 필요한지 먼저 확인하십시오. 예약 시 접대 목적임을 밝히면, 업무에서 자동으로 가장 조용한 구역을 우선 배정합니다. 정확한 인원수와 함께 방문자의 직급이나 선호하는 음악 장르까지 전달할수록 세팅이 정교해집니다.</p>
 
-            <h3>친목 및 소모임</h3>
-            <p>편안한 분위기가 우선이라면, 스탠다드 혹은 미디엄 룸이면 충분합니다. 이 경우에는 음향 장비보다 좌석 배치와 테이블 공간이 더 중요합니다. 예약 시 간단한 안주 플레이트나 생일 케이크 준비 여부를 함께 문의하면 당일 대기 시간을 줄일 수 있습니다.</p>
+ <h3>친목 및 소모임</h3>
+ <p>편안한 분위기가 우선이라면, 스탠다드 혹은 미디엄 룸이면 충분합니다. 이 경우에는 음향 장비보다 좌석 배치와 테이블 공간이 더 중요합니다. 예약 시 간단한 안주 플레이트나 생일 케이크 준비 여부를 함께 문의하면 당일 대기 시간을 줄일 수 있습니다.</p>
 
-            <h3>대규모 이벤트 및 파티</h3>
-            <p>16명 이상의 이벤트는 최소 4일 전에 예약해야 합니다. 파티룸은 하루에 한두 팀만 수용하는 구조이기 때문입니다. 풍선이나 현수막 등 추가 데코레이션을 원한다면, 반입 가능 여부와 추가 비용을 미리 협의해야 합니다. 또한 대규모 인원은 입장과 퇴장에만 20분 이상 소요되므로, 이 시간을 예약 시간에 포함시켜 계산해야 합니다.</p>
-        </div>
+ <h3>대규모 이벤트 및 파티</h3>
+ <p>16명 이상의 이벤트는 최소 4일 전에 예약해야 합니다. 파티룸은 하루에 한두 팀만 수용하는 구조이기 때문입니다. 풍선이나 현수막 등 추가 데코레이션을 원한다면, 반입 가능 여부와 추가 비용을 미리 협의해야 합니다. 또한 대규모 인원은 입장과 퇴장에만 20분 이상 소요되므로, 이 시간을 예약 시간에 포함시켜 계산해야 합니다.</p>
+ </div>
 
-        <!-- 장부 5: 자주 발생하는 오해 -->
-        <div class="ledger-block">
-            <h2>예약 전 알아두면 피할 수 있는 오해 4가지</h2>
-            <p>처음 예약하는 분들이 공통적으로 겪는 오류를 정리했습니다. 이 내용을 숙지하면 상담 시간이 절약되고, 불필요한 취소나 변경도 줄일 수 있습니다.</p>
-            <p><strong>오해 1: 전화 한 통이면 바로 확정된다?</strong><br>실제로는 예약 접수 후 담당자가 룸 배정을 검토하고, 최종 확인 연락을 드리는 2단계로 진행됩니다. 첫 전화로는 접수가 완료될 뿐입니다.</p>
-            <p><strong>오해 2: 가격은 인원수에 비례한다?</strong><br> 신도림 가라오케 예약 요금은 룸 단위로 책정되는 경우가 대부분입이다. 인원이 2명이든 4명이든 동일 룸을 쓰면 기본 요금은 같으며, 추가 인원에 따른 인당 차지가 붙는 구조입니다.</p>
-            <p><strong>오해 3: 도착 시간이 늦어도 룸은 그대로 유지된다?</strong><br> 예약 시간으로부터 20분이 초과되면, 사전 연락이 없는 경우 자동 취소 처리될 수 있습니다. 지연이 예상되면 반드시 전화로 통보해야 합니다.</p>
-            <p><strong>오해 4: 현장 결제만 가능하다?</strong><br> 많은 업장들이 계좌이체 혹은 카드 선결제를 지원합니다. 특히 예약이 많은 시간대에는 선결제 시 확정이 더 빠르게 이루어집니다.</p>
-        </div>
+ <!-- 장부 5: 자주 발생하는 오해 -->
+ <div class="ledger-block">
+ <h2>예약 전 알아두면 피할 수 있는 오해 4가지</h2>
+ <p>처음 예약하는 분들이 공통적으로 겪는 오류를 정리했습니다. 이 내용을 숙지하면 상담 시간이 절약되고, 불필요한 취소나 변경도 줄일 수 있습니다.</p>
+ <p><strong>오해 1: 전화 한 통이면 바로 확정된다?</strong><br>실제로는 예약 접수 후 담당자가 룸 배정을 검토하고, 최종 확인 연락을 드리는 2단계로 진행됩니다. 첫 전화로는 접수가 완료될 뿐입니다.</p>
+ <p><strong>오해 2: 가격은 인원수에 비례한다?</strong><br> 신도림 가라오케 예약 요금은 룸 단위로 책정되는 경우가 대부분입이다. 인원이 2명이든 4명이든 동일 룸을 쓰면 기본 요금은 같으며, 추가 인원에 따른 인당 차지가 붙는 구조입니다.</p>
+ <p><strong>오해 3: 도착 시간이 늦어도 룸은 그대로 유지된다?</strong><br> 예약 시간으로부터 20분이 초과되면, 사전 연락이 없는 경우 자동 취소 처리될 수 있습니다. 지연이 예상되면 반드시 전화로 통보해야 합니다.</p>
+ <p><strong>오해 4: 현장 결제만 가능하다?</strong><br> 많은 업장들이 계좌이체 혹은 카드 선결제를 지원합니다. 특히 예약이 많은 시간대에는 선결제 시 확정이 더 빠르게 이루어집니다.</p>
+ </div>
 
-        <div class="diver-dot">· · ·</div>
+ <div class="diver-dot">· · ·</div>
 
-        <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">본 장부는 2025년 3월 기준 신도림 가라오케 예약 데이터를 바탕으로 집계되었습니다.</p>
-    </div>
+ <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">본 장부는 2025년 3월 기준 신도림 가라오케 예약 데이터를 바탕으로 집계되었습니다.</p>
+ </div>
 
-    <footer>
-        <p>© 신도림 가라오케 예약 안내 — 신뢰할 수 있는 기준으로 첫 방문을 돕습니다.</p>
-    </footer>
+ <footer>
+ <p>© 신도림 가라오케 예약 안내 — 신뢰할 수 있는 기준으로 첫 방문을 돕습니다.</p>
+ </footer>
 </body>
 </html>
